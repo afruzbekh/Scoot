@@ -1,0 +1,436 @@
+.firstabout-main {
+    padding: 120px 80px 80px 69px;
+    @include for-tablet-portrait-up {
+        padding: 144px 98px 120px 97px;
+    }
+    @include for-phone-only {
+        padding: 72px 32px 120px 32px;
+    }
+    &__part1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include for-tablet-portrait-up {
+            flex-wrap: wrap-reverse;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        &__left {
+            @include for-tablet-portrait-up {
+                text-align: center;
+                margin: 0 auto;
+            }
+            h2 {
+                max-width: 445px;
+                margin-bottom: 24px;
+                font: {
+                    family: $main-font-family;
+                    weight: 700;
+                    size: 48px;
+                }
+                line-height: 48px;
+                letter-spacing: -2.14286px;
+                color: $main-font-color;
+                @include for-tablet-portrait-up {
+                    max-width: 457px;
+                    margin: 0 auto;
+                    margin-top: 56px;
+                    margin-bottom: 40px;
+                }
+                @include for-phone-only {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                    letter-spacing: -1.42857px;
+                }
+            }
+            p {
+                @include for-phone-only {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                @include for-tablet-portrait-up {
+                    max-width: 573px;
+                }
+                max-width: 445px;
+                font: {
+                    family: $secondary-font-family;
+                    weight: 400;
+                    size: 15px;
+                }
+                line-height: 25px;
+                color: $third-font-color;
+            }
+        }
+        &__right {
+            &__img {
+                max-width: 445px;
+                width: 100%;
+            }
+            &__line {
+                position: absolute;
+                z-index: 3;
+                max-width: 734px;
+                top: 266px;
+                right: -164px;
+                @include for-tablet-portrait-up {
+                    top: 270px;
+                    right: -102px;
+                }
+                @include for-phone-only {
+                    top: 157px;
+                    right: -378px;
+                }
+            }
+        }
+    }
+    &__part2 {
+        margin-top: 171px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include for-tablet-portrait-up {
+            padding-top: 120px;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+        &__left {
+            &__img {
+                max-width: 445px;
+                width: 100%;
+            }
+            &__line {
+                position: absolute;
+                z-index: 3;
+                max-width: 734px;
+                left: -138px;
+                @include for-tablet-portrait-up {
+                    left: -119px;
+                }
+                @include for-phone-only {
+                    left: -61px;
+                }
+            }
+        }
+        &__right {
+            @include for-tablet-portrait-up {
+                text-align: center;
+                margin: 0 auto;
+            }
+            h2 {
+                @include for-phone-only {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                    letter-spacing: -1.42857px;
+                }
+                max-width: 445px;
+                margin-bottom: 24px;
+                font: {
+                    family: $main-font-family;
+                    weight: 700;
+                    size: 48px;
+                }
+                line-height: 48px;
+                letter-spacing: -2.14286px;
+                color: $main-font-color;
+                @include for-tablet-portrait-up {
+                    max-width: 457px;
+                    margin: 0 auto;
+                    margin-top: 56px;
+                    margin-bottom: 40px;
+                }
+            }
+            p {
+                @include for-phone-only {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                @include for-tablet-portrait-up {
+                    max-width: 573px;
+                }
+                max-width: 445px;
+                font: {
+                    family: $secondary-font-family;
+                    weight: 400;
+                    size: 15px;
+                }
+                line-height: 25px;
+                color: $third-font-color;
+            }
+        }
+    }
+}
+
+.ourvalues {
+    padding: 0 80px 120px 80px;
+    @include for-phone-only {
+        padding: 0 32px 145px 32px;
+    }
+    h2 {
+        @include for-phone-only {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -1.42857px;
+        }
+        max-width: 540px;
+        margin: 0 auto;
+        margin-bottom: 85px;
+        font: {
+            family: $main-font-family;
+            weight: 700;
+            size: 48px;
+        }
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: -2.14286px;
+        color: $main-font-color;
+    }
+    &__boxes {
+        display: flex;
+        column-gap: 30px;
+        @include for-tablet-portrait-up {
+            flex-direction: column;
+            row-gap: 55px;
+        }
+        &__box {
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 100%;
+            img {
+                max-width: 240px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            &__below {
+                position: relative;
+                z-index: 3;
+                margin-top: -47px;
+                &__circlenumber {
+                    width: 96px;
+                    height: 96px;
+                    border-radius: 50%;
+                    background: $main-button-color;
+                    display: grid;
+                    place-items: center;
+                    margin: 0 auto;
+                    transition: 0.5s ease;
+                    border: 3px solid transparent;
+                    span {
+                        font: {
+                            family: $main-font-family;
+                            weight: 700;
+                            size: 24px;
+                        }
+                        line-height: 28px;
+                        text-align: center;
+                        letter-spacing: -1.07143px;
+                        color: $main-font-color;
+                    }
+                }
+                &__circlenumber:hover {
+                    background: $secondry-font-color;
+                    border: 3px solid $main-button-color;
+                }
+                h3 {
+                    @include for-phone-only {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        text-align: center;
+                        letter-spacing: -1.07143px;
+                    }
+                    margin: 0 auto;
+                    max-width: 350px;
+                    margin-top: 32px;
+                    margin-bottom: 27px;
+                    font: {
+                        family: $main-font-family;
+                        weight: 700;
+                        size: 24px;
+                    }
+                    line-height: 28px;
+                    letter-spacing: -1.07143px;
+                    color: $main-font-color;
+                }
+                p {
+                    @include for-phone-only {
+                        max-width: 311px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        text-align: center;
+                    }
+                    @include for-tablet-portrait-up {
+                        max-width: 457px;
+                    }
+                    margin: 0 auto;
+                    max-width: 350px;
+                    font: {
+                        family: $secondary-font-family;
+                        weight: 400;
+                        size: 15px;
+                    }
+                    line-height: 25px;
+                    color: $third-font-color;
+                }
+            }
+        }
+    }
+}
+
+.faqs {
+    padding: 0 80px 160px 80px;
+    @include for-tablet-portrait-up {
+        padding: 0 39px 120px 39px;
+    }
+    @include for-phone-only {
+        padding: 0 32px 120px 32px;
+    }
+    h2 {
+        margin-bottom: 64px;
+        font: {
+            family: $main-font-family;
+            weight: 700;
+            size: 48px;
+        }
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: -2.14286px;
+        color: $main-font-color;
+    }
+    &__part1 {
+        @include for-tablet-portrait-up {
+            flex-direction: column;
+        }
+        margin-bottom: 64px;
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            @include for-tablet-portrait-up {
+                margin: 0 auto;
+                margin-bottom: 32px;
+            }
+            height: 48px;
+            font: {
+                family: $main-font-family;
+                weight: 700;
+                size: 40px;
+            }
+            line-height: 48px;
+            letter-spacing: -1.78571px;
+            color: $main-font-color;
+        }
+    }
+}
+
+.collapsible {
+    margin-bottom: 16px;
+    max-width: 730px;
+    overflow: hidden;
+    transition: 0.5s ease;
+    background: $body-bg;
+    input {
+        display: none;
+    }
+    label {
+        @include for-phone-only {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.803571px;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;
+        }
+        padding: 32px 40px 32px 40px;
+        position: relative;
+        font: {
+            family: $main-font-family;
+            weight: 700;
+            size: 24px;
+        }
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: $main-font-color;
+        display: block;
+        cursor: pointer;
+        z-index: 1;
+        @include for-phone-only {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.803571px;
+        }
+    }
+    label:after {
+        content: "";
+        position: absolute;
+        right: 38px;
+        top: 41px;
+        width: 18px;
+        height: 18px;
+        background-image: url('../images/pathbtn.svg');
+        background-repeat: no-repeat;
+        transition: all 0.3s ease;
+    }
+    &__text {
+        max-height: 1px;
+        overflow: hidden;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.5s ease;
+    }
+}
+
+.collapsible input:checked+label:after {
+    transform: rotate(180deg);
+}
+
+.collapsible input:checked~.collapsible__text {
+    max-height: 191px;
+    padding: 24px 40px 32px 40px;
+    opacity: 1;
+    top: 0;
+    transition: 0.5s ease;
+}
+
+.collapsible__text {
+    p {
+        font: {
+            family: $secondary-font-family;
+            weight: 400;
+            size: 15px;
+        }
+        line-height: 25px;
+        color: $main-font-color;
+    }
+}
+
+.collapsible:hover {
+    background: #FFF4DF;
+}
+
+.collapsible input:checked~.collapsible__text:hover {
+    background: #FFF4DF;
+}
+
+.lastpartmainabout {
+    margin-top: 0;
+}

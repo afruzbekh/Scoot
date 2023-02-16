@@ -1,0 +1,32 @@
+.about__hero {
+    padding: 72px 0px 72px 80px;
+    background-image: url(.././images/Bitmap@3x.png);
+    background-repeat: no-repeat;
+    background-size: 1440px;
+    @include for-tablet-portrait-up {
+        background-image: url(.././images/aboutherotabletbg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 72px 98px 72px 97px;
+    }
+    @include for-phone-only {
+        background-image: url(.././images/aboutherophonebg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 44px 32px 60px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    h1 {
+        font: {
+            family: $main-font-family;
+            weight: 700;
+            size: 56px;
+        }
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: $secondry-font-color;
+    }
+}
