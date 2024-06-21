@@ -141,13 +141,13 @@ nav {
 
 .hero {
   padding: 153px 0px 152px 80px;
-  background-image: url(../../images/herobg.png);
+  background-image: url(../images/herobg.png);
   background-repeat: no-repeat;
-  background-size: 1440px 100%;
+  background-size: 100vw 100vh;
 }
 @media (max-width: 820px) {
   .hero {
-    background-image: url(../../images/herotabletbg.jpg);
+    background-image: url(../images/herotabletbg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 137px 98px 217px 97px;
@@ -159,7 +159,7 @@ nav {
 }
 @media (max-width: 599px) {
   .hero {
-    background-image: url(../../images/herophonebg.png);
+    background-image: url(../images/herophonebg.png);
     background-repeat: no-repeat;
     background-size: 100% 650px;
     padding: 115px 32px 179px 32px;
@@ -846,7 +846,7 @@ footer {
   padding: 72px 0px 72px 80px;
   background-image: url(.././images/Bitmap@3x.png);
   background-repeat: no-repeat;
-  background-size: 1440px;
+  background-size: 100vw;
 }
 @media (max-width: 820px) {
   .about__hero {
